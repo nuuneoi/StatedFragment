@@ -1,4 +1,8 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+
+version = "1.0.0"
 
 ext {
     PUBLISH_GROUP_ID = 'com.inthecheesefactory.thecheeselibrary'
@@ -11,7 +15,6 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.inthecheesefactory.thecheeselibrary.fragment"
         minSdkVersion 4
         targetSdkVersion 21
         versionCode 1
@@ -34,3 +37,21 @@ dependencies {
 }
 
 apply from: 'android-release-aar.gradle'
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+bintray {
+    user = properties.getProperty("bintray.user")
+    key = properties.getProperty("bintray.apikey")
+
+    configurations = ['archives']
+    pkg {
+        repo = "maven"
+        name = "StatedFragment"
+        websiteUrl = "https://github.com/nuuneoi/StatedFragment"
+        vcsUrl = "https://github.com/nuuneoi/StatedFragment.git"
+        licenses = ["Apache-2.0"]
+        publish = true
+    }
+}
