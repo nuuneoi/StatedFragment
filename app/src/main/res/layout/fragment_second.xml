@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="I am the second fragment. Please try the following cases:\n\n1) Press back and comes back here again and then back once again. TextView's text are still persisted.\n\n2) Rotate previous page again and again. See the content of TextView.\n\n3) Rotate this screen again and again and again. After that, press Back and see the content of TextView in previous page."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp" />
+
+</LinearLayout>

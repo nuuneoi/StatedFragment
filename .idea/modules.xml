@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/StatedFragment.iml" filepath="$PROJECT_DIR$/StatedFragment.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/statedfragment.iml" filepath="$PROJECT_DIR$/app/statedfragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stated-fragment/stated-fragment.iml" filepath="$PROJECT_DIR$/stated-fragment/stated-fragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/stated-fragment-support-v4.iml" filepath="$PROJECT_DIR$/app/stated-fragment-support-v4.iml" />
     </modules>
   </component>
 </project>

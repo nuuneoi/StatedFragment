@@ -1,1 +1,1 @@
-include ':statedfragment'
+include ':app', ':stated-fragment-support-v4', ':stated-fragment'

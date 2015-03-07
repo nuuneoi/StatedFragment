@@ -8,7 +8,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/statedfragment" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/stated-fragment" />
+            <option value="$PROJECT_DIR$/stated-fragment-support-v4" />
           </set>
         </option>
       </GradleProjectSettings>
