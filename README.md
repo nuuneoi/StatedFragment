@@ -10,6 +10,16 @@ The library is documented in http://inthecheesefactory.com/blog/best-approach-to
 
 To use this library in your android project, just simply add the following dependency into your build.gradle
 
+StatedFragment for Android Support Library v4's Fragment
+
+```sh
+dependencies {
+    compile 'com.inthecheesefactory.thecheeselibrary:stated-fragment-support-v4:0.9.1'
+}
+```
+
+StatedFragment for Android's Fragment
+
 ```sh
 dependencies {
     compile 'com.inthecheesefactory.thecheeselibrary:stated-fragment-support-v4:0.9.1'
