@@ -22,7 +22,7 @@ StatedFragment for Android's Fragment
 
 ```sh
 dependencies {
-    compile 'com.inthecheesefactory.thecheeselibrary:stated-fragment-support-v4:0.9.1'
+    compile 'com.inthecheesefactory.thecheeselibrary:stated-fragment:0.9.1'
 }
 ```
 
