@@ -28,6 +28,8 @@ dependencies {
 
 # Usage
 
+### State Saving/Restoring
+
 Extends StatedFragment and save state in `onSaveState(Bundle outState)` and restore state in `onRestoreState(Bundle savedInstanceState)`. You are also able to override `onFirstTimeLaunched()`, if you want to do something as the first time the fragment is launched (is not called again after that).
 
 ```java
@@ -60,7 +62,36 @@ public class MainFragment extends StatedFragment {
 }
 ```
 
+### onActivityResult for Nested Fragment
+
+In **v0.9.2**, `StatedFragment` comes up with a feature that can fix `onActivityResult` problem which couldn't be called on nested fragment. To use it, you have to override `onActivityResult` on your `Activity` and add a line of code:
+
+```java
+    @Override
+    protected void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        ActivityResultBus.getInstance().postQueue(new ActivityResultEvent(requestCode, resultCode, data));
+    }
+```
+
+And in your fragment, you need to call `getActivity().startActivityForResult(...)` but not `startActivityForResult(...)` since we need to let all the result sent to Activity.
+
+Lastly, override `onActivityResult` in your fragment in the standard way.
+
+```java
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        // Add your code here
+        Toast.makeText(getActivity(), "Fragment Got it: " + requestCode + ", " + resultCode, Toast.LENGTH_SHORT).show();
+    }
+```
+
 # Change Logs
+
+### v0.9.2
+
+Add onActivityResult feature for nested fragment.
 
 ### v0.9.1
 
