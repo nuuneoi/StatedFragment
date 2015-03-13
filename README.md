@@ -4,7 +4,7 @@ The library is documented in http://inthecheesefactory.com/blog/best-approach-to
 
 # Version
 
-0.9.1
+0.9.2
 
 # Installation
 
