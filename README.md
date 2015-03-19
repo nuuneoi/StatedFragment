@@ -4,7 +4,7 @@ The library is documented in http://inthecheesefactory.com/blog/best-approach-to
 
 # Version
 
-0.9.2
+0.9.3
 
 # Installation
 
@@ -14,7 +14,7 @@ StatedFragment for Android Support Library v4's Fragment
 
 ```sh
 dependencies {
-    compile 'com.inthecheesefactory.thecheeselibrary:stated-fragment-support-v4:0.9.2'
+    compile 'com.inthecheesefactory.thecheeselibrary:stated-fragment-support-v4:0.9.3'
 }
 ```
 
@@ -22,7 +22,7 @@ StatedFragment for Android's Fragment
 
 ```sh
 dependencies {
-    compile 'com.inthecheesefactory.thecheeselibrary:stated-fragment:0.9.2'
+    compile 'com.inthecheesefactory.thecheeselibrary:stated-fragment:0.9.3'
 }
 ```
 
@@ -64,7 +64,7 @@ public class MainFragment extends StatedFragment {
 
 ### onActivityResult for Nested Fragment
 
-In **v0.9.2**, `StatedFragment` comes up with a feature that can fix `onActivityResult` problem which couldn't be called on nested fragment. To use it, you have to override `onActivityResult` on your `Activity` and add a line of code:
+In **v0.9.2** onward, `StatedFragment` comes up with a feature that can fix `onActivityResult` problem which couldn't be called on nested fragment. To use it, you have to override `onActivityResult` on your `Activity` and add a line of code:
 
 ```java
     @Override
@@ -88,6 +88,10 @@ Lastly, override `onActivityResult` in your fragment in the standard way.
 ```
 
 # Change Logs
+
+### v0.9.3
+
+Add support to `<fragment>` tag.
 
 ### v0.9.2
 

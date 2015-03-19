@@ -17,6 +17,8 @@ public class StatedFragment extends Fragment {
 
     public StatedFragment() {
         super();
+        if (getArguments() == null)
+            setArguments(new Bundle());
     }
 
     @Override
@@ -61,7 +63,8 @@ public class StatedFragment extends Fragment {
             savedState = saveState();
         if (savedState != null) {
             Bundle b = getArguments();
-            b.putBundle("internalSavedViewState8954201239547", savedState);
+            if (b != null)
+                b.putBundle("internalSavedViewState8954201239547", savedState);
         }
     }
 
@@ -71,10 +74,12 @@ public class StatedFragment extends Fragment {
 
     private boolean restoreStateFromArguments() {
         Bundle b = getArguments();
-        savedState = b.getBundle("internalSavedViewState8954201239547");
-        if (savedState != null) {
-            restoreState();
-            return true;
+        if (b != null) {
+            savedState = b.getBundle("internalSavedViewState8954201239547");
+            if (savedState != null) {
+                restoreState();
+                return true;
+            }
         }
         return false;
     }
