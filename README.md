@@ -1,3 +1,5 @@
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-StatedFragment-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/1660)
+
 # StatedFragment
 
 The library is documented in http://inthecheesefactory.com/blog/best-approach-to-keep-android-fragment-state/en
