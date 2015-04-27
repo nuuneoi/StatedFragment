@@ -11,6 +11,7 @@ import com.squareup.otto.Subscribe;
 /**
  * Created by nuuneoi on 11/16/2014.
  */
+@Deprecated
 public class StatedFragment extends Fragment {
 
     Bundle savedState;
