@@ -6,7 +6,7 @@ Provides a functionality to retrieve `onActivityResult` in nested fragment.
 
 # Version
 
-0.9.4
+0.10.0
 
 # Installation
 
@@ -16,7 +16,7 @@ StatedFragment for Android Support Library v4's Fragment
 
 ```sh
 dependencies {
-    compile 'com.inthecheesefactory.thecheeselibrary:stated-fragment-support-v4:0.9.4'
+    compile 'com.inthecheesefactory.thecheeselibrary:stated-fragment-support-v4:0.10.0'
 }
 ```
 
@@ -24,7 +24,7 @@ StatedFragment for Android's Fragment
 
 ```sh
 dependencies {
-    compile 'com.inthecheesefactory.thecheeselibrary:stated-fragment:0.9.4'
+    compile 'com.inthecheesefactory.thecheeselibrary:stated-fragment:0.10.0'
 }
 ```
 
@@ -32,7 +32,7 @@ dependencies {
 
 ### onActivityResult for Nested Fragment
 
-In **v0.9.4** onward, `NestedActivityResultFragment` is introduced to fix `onActivityResult` problem which couldn't be called on nested fragment. To use it, you have to override `onActivityResult` on your `Activity` and add a line of code:
+In **v0.10.0** onward, `NestedActivityResultFragment` is introduced to fix `onActivityResult` problem which couldn't be called on nested fragment. To use it, you have to override `onActivityResult` on your `Activity` and add a line of code:
 
 ```java
     @Override
@@ -61,7 +61,7 @@ Lastly, override `onActivityResult` in your fragment in the standard way.
 
 ### State Saving/Restoring
 
-Since v0.9.4, `StatedFragment` is now marked <span style="color: red">**deprecated**</span>. Please use the traditional way documented at http://inthecheesefactory.com/blog/fragment-state-saving-best-practices/en instead
+Since v0.10.0, `StatedFragment` is now marked <span style="color: red">**deprecated**</span>. Please use the traditional way documented at http://inthecheesefactory.com/blog/fragment-state-saving-best-practices/en instead
 
 # Change Logs
 
